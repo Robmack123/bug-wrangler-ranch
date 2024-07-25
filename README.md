@@ -105,11 +105,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > Your answer here - That line of code pulls an array of objects from the database.js file. The array has every single drover that can be generated.              
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > Your answer here: Drover is an object while drovers is the array that contains the properties of the object.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > Your public Loom URL here https://www.loom.com/share/e32e30bbc0c0438298bb4996e0463c17?sid=96a86af7-4699-4404-bdcb-d6b240386b5d
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -117,9 +117,10 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > Your answer here. I explained this in loom video, but the for loop checks how many of each area are in the area array. If forestNumber is less then areas.forests, it will add one forest to forestNumber and push it to the journey array. Once forest number is equal to areas.forests, it will move to the next for loop in the journey() function.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > Your answer here: The database variable is the collection of objects and arrays in the database module. That collection is than being exported to drovers.js and cattle.js so they can perform the functions in those two files.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
    > Your answer here
 

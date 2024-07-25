@@ -1,6 +1,6 @@
 const { database } = require("./database.js")
 
-const roundup = (herdSize) => {
+const roundup = (size) => {
     const cattle = []
     const types = database.cattleTypes
 
@@ -11,6 +11,7 @@ const roundup = (herdSize) => {
     }
 
     return cattle
+    
 }
 
 module.exports = { roundup }
